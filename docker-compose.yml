@@ -1,0 +1,13 @@
+services:
+  web:
+    build: ./Web
+    image: ipin0917826334/image-frontend:lastest
+    ports:
+      - "8081:80"
+    container_name: frontend
+  server:
+    build: ./Server
+    image: ipin0917826334/image-backend:lastest
+    ports:
+      - "8088:80"
+    container_name: backend
