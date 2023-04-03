@@ -22,7 +22,7 @@ pipeline{
                 }
             }
         }
-        stage("wake slave"){
+        stage("trigger slave"){
             steps{
                 build job: 'slave'
             }
